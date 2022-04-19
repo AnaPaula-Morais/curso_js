@@ -1,4 +1,4 @@
-function trcardiv() {
+function trocardiv() {
     var area = document.getElementById("area");
     var texto = prompt("Digite alguma coisa");
 
