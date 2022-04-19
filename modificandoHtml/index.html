@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!--Crie uma div com id-->
+    <div id="area">Alguma coisa que será substituída...</div>
+    <br/><br/>
+    <!--Crie um botão para acontecer a ação/com atributo onclick. Quando o usuário clicar no botão
+    é para abrir uma janela na qual possa ser digitado alguma coisa e o que for digitado vai ser 
+    substituído no texto da div-->
+    <!--Quando o usuário clicar no botão ele vai selecionar a div pelo id para poder ser alterado o
+    conteúdo da mesma/o innerHTML vai substituir o conteúdo interno da div-->
+    <button onclick="document.getElementById('area').innerHTML= prompt('Digite alguma coisa')">Fazer a ação</button>
+
+    <!--Se eu quiser mudar o prorprio mo,e do botão. Utiliza-se this=>seleciona o proprio elemento-->
+    <button onclick="this.innerHTML = prompt('Digite nome para o botão')">Clique aqui para mudar o botão</button>
+    <!--Vamos colocar outro botão para realizar uma açao com o uso de funções-->
+    <button onclick="trocardiv()">Botão para exempificar uma função</button>
+    <!--Mais um exemplo usando parametros nas funções-->
+    <button onclick="clicar('Joana')">Exemplo usando parametros na função</button>
+</body>
+
+</html>
