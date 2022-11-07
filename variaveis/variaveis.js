@@ -19,6 +19,7 @@
 var numero = 1;
 var numero2 = 1;
 
-resultado = numero+numero2;
 
+resultado = numero+numero2;
+console.log (typeof numero);
 alert(resultado);
