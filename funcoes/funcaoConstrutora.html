@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Construtora</title>
+</head>
+<body>
+   <script>
+        function Person(name){
+            this.name = name
+            this.walk = function(){
+                return this.name + " está andando";
+            }
+        }
+        const ana = new Person("Ana");
+        const mario = new Person("Mario");
+        console.log(ana.walk());
+        console.log(mario.walk());
+   </script> 
+</body>
+</html>
