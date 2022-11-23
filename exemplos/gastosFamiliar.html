@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Familiares com JS</title>
+</head>
+<body>
+    <script>
+       let gastosFamiliares = {
+            receitas: [740, 400],
+            despesas: [700, 100, 240, 80, 60] 
+
+       }
+
+       function somar(array){
+            let total = 0;
+            for(let valor of array){
+                total += valor;
+            }
+
+            return total;
+       }
+
+       function calcularGastos(){
+            const calculaReceitas = somar(gastosFamiliares.receitas)
+            const calculaDespesas  = somar(gastosFamiliares.despesas) 
+
+            const total = calculaReceitas - calculaDespesas;
+            
+            if(total >= 0){
+                console.log(`Seu saldo foi POSITIVO : ${total.toFixed(2)}`)
+            }else {
+                console.log(`Seu saldo foi NEGATIVO : ${total.toFixed(2)}`)   
+            }
+       }
+
+       calcularGastos();
+    </script>
+</body>
+</html>

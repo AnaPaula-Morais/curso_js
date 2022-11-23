@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Escolares com JS</title>
+</head>
+<body>
+   <script>
+        let nota = 100;
+        if (nota < 60 && nota >=0){
+            console.log("Sua nota foi um F")
+        }else if (nota >= 60 && nota <= 69){
+            console.log("Sua nota foi um D")
+        }else if (nota >= 70 && nota <= 79){
+            console.log("Sua nota foi um C")
+        }else if (nota >= 80 && nota <= 89){
+            console.log("Sua nota foi um B")
+        }else if (nota >= 90 && nota <= 100) {
+            console.log("Sua nota foi um A")
+        }else {
+            console.log("Nota Inválida")
+        }
+
+       function mostraNota(nota){
+            if (nota < 60 && nota >=0){
+                return "Sua nota foi um F";
+            }else if (nota >= 60 && nota <= 69){
+                return "Sua nota foi um D"
+            }else if (nota >= 70 && nota <= 79){
+                return "Sua nota foi um C"
+            }else if (nota >= 80 && nota <= 89){
+                return "Sua nota foi um B"
+            }else if (nota >= 90 && nota <= 100) {
+                return "Sua nota foi um A"
+            }else {
+                return "Nota Inválida"
+            }
+       }
+
+       console.log (mostraNota(50));
+   </script> 
+</body>
+</html>
