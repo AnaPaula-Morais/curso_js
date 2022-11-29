@@ -16,7 +16,8 @@ Javascript é uma linguagem de programação de:
 
 <strong>Formas de mostrar dados para o usuário:</strong>
 
-*manipulando elemento do HTML, colocando um id na tag que vc quer manipular. Exemplo: código html: ```<h1 id="texto">Seja bem vindo</h1>
+*manipulando elemento do HTML, colocando um id na tag que vc quer manipular. 
+Exemplo: código html: ```<h1 id="texto">Seja bem vindo</h1>
          código JS:  getElementById("texto").innerHTML = "Muda-se a msg"```
 Éssa função vai selecionar o elemento que tem o id texto e trocar o texto por outro.
 
@@ -40,10 +41,11 @@ Javascript é uma linguagem de programação de:
 
 <br>
 <strong>DOM</strong>(Document Object Model)
-	```*``` É o HTML convertido para um Objeto JavaScript
-	```*``` API que representa e interage com o HTML
-	```*``` Estrutura de dados do tipo árvore, criada pelo browser
-	```*``` Propriedades e métodos
+
+```*``` É o HTML convertido para um Objeto JavaScript
+```*``` API que representa e interage com o HTML
+```*``` Estrutura de dados do tipo árvore, criada pelo browser
+```*``` Propriedades e métodos
 	
 É uma interface de programação para documentos HTML, XML e SVG . Ele fornece uma representação estruturada do documento como uma árvore. O DOM define métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do documento.
 
@@ -52,18 +54,20 @@ O DOM fornece uma representação do documento como um grupo estruturado de nós
 O Document Object Model (DOM) é uma interface de programação para documentos da web. Ele representa a página para que os programas possam alterar a estrutura, o estilo e o conteúdo do documento. O DOM representa o documento como nós e objetos; dessa forma, as linguagens de programação podem interagir com a página.
 
 
-Como seleccionar elementos na página
-	```*``` getElementById()
-	```*``` getElementsByClassName()
-	```*``` getElementsByTagName()
-	```*``` querySelector()
-	```*``` querySelectorAll()
+
+Como seleccionar elementos na página:
+```*``` getElementById()
+```*``` getElementsByClassName()
+```*``` getElementsByTagName()
+```*``` querySelector()
+```*``` querySelectorAll()
+
 	
 Manipulando Conteúdos
-	```*``` textContent
-	```*``` innerText
-	```*``` innerHTML
-	```*``` value
+```*``` textContent
+```*``` innerText
+```*``` innerHTML
+```*``` value
 
 
 
