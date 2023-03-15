@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h3 id="titulo">Este tem <i><u>importancia</u></i></h3>
+    <div class="noticia">
+        <h1>Título da notícia <strong>1</strong></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, nam, iure a rem, praesentium debitis nisi aut alias et saepe impedit ad doloribus asperiores repellendus voluptates doloremque cupiditate voluptas fuga?</p>
+    </div>
+
+    <div>
+        <h1>Título notícia 2</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sint quos nesciunt est eligendi, a cupiditate quae reiciendis aspernatur adipisci? Quidem labore repudiandae id expedita ea dolores autem modi voluptas!</p>
+    </div>
+
+    <img src="../assets/filip-mishevski-c5QdMcuFlgY-unsplash.jpg" alt="noticia" id="noticia" width="400">
+
+    <script>
+        let elemento = document.querySelector("#titulo");
+        console.log(elemento);
+        let elemento1 = document.querySelector(".noticia");
+        console.log(elemento1);
+        let elemento2 = document.querySelectorAll("div");
+        console.log(elemento2);
+        let elemento3 = document.querySelector("#titulo > i > u");
+        elemento3.style.color = "green";
+        console.log(elemento3);
+
+        let elemento4 = document.querySelector(".noticia > h1");
+        elemento4.innerText = "Novo Texto";
+        console.log(elemento4.innerHTML);
+
+
+        let imagem = document.querySelector("#noticia");
+        imagem.src = "../assets/roman-kraft-_Zua2hyvTBk-unsplash.jpg";
+        console.log(imagem.alt);
+
+        document.querySelector("#titulo").innerHTML = imagem.alt;
+    </script>
+</body>
+</html>

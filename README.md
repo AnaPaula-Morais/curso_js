@@ -55,19 +55,19 @@ O Document Object Model (DOM) é uma interface de programação para documentos 
 
 
 
-Como seleccionar elementos na página:
-```*``` getElementById()
-```*``` getElementsByClassName()
-```*``` getElementsByTagName()
-```*``` querySelector()
-```*``` querySelectorAll()
+Como seleccionar elementos na página: <br>
+```*``` getElementById()<br>
+```*``` getElementsByClassName()<br>
+```*``` getElementsByTagName()<br>
+```*``` querySelector()<br>
+```*``` querySelectorAll()<br>
 
 	
-Manipulando Conteúdos
-```*``` textContent
-```*``` innerText
-```*``` innerHTML
-```*``` value
+Manipulando Conteúdos<br>
+```*``` textContent<br>
+```*``` innerText<br>
+```*``` innerHTML<br>
+```*``` value<br>
 
 
 

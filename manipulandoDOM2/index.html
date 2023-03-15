@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <div>
+        <p>Texto</p>
+        <form action="">
+            <select name="" id="">
+                <option value="">masculino</option>
+                <option value="">feminino</option>
+            </select>
+            <input type="button" value="Confirmar">
+        </form>
+    </div>
+
+    <script>
+        var elementos = document.getElementsByTagName("*");
+        document.write("Quantidade de elementos: " + elementos.length);
+        var todosElementos = "";
+        for(e of elementos){
+           todosElementos = todosElementos + "<br>" + e.tagName; 
+        }
+        document.write(todosElementos);
+    </script>
+    
+</body>
+</html>
