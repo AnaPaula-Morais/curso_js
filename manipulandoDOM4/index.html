@@ -29,8 +29,14 @@
         console.log(titulo);
         var descricao = document.getElementById("descricao");
         console.log(descricao);
-        var listaItens = document.querySelectorAll(".itens");
+        var listaItens = document.querySelectorAll(".itens")
         console.log(listaItens);
+        console.log(titulo.outerHTML);
+        var para = document.getElementsByTagName("p")[1];
+        var text  = para.textContent;
+        para.textContent = "Hello world";
+        console.log(para);
+        console.log(text);
     </script>
 </body>
 </html>
